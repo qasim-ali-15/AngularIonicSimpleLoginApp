@@ -1,0 +1,94 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title> <div class="center justify-center flex text-4xl text-white font-bold underline">Registration</div></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!-- <div class="main"> -->
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Select your Profession</ion-card-title><br>
+
+    </ion-card-header>
+    <ion-card-content>
+      <ion-radio-group value="space-between">
+        <ion-item>
+          <ion-radio value="TEACHER" justify="space-between">Teacher</ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-radio value="STUDENT" justify="space-between">Student</ion-radio>
+        </ion-item>
+      </ion-radio-group>
+
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Contact Details</ion-card-title><br>
+
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item>
+        <ion-label position="floating">Name</ion-label>
+        <ion-input type="text"></ion-input>
+    </ion-item>
+      <ion-item>
+        <ion-label position="floating">Email</ion-label>
+        <ion-input type="email"></ion-input>
+    </ion-item>
+      <ion-item>
+        <ion-label position="floating">Password</ion-label>
+        <ion-input type="password"></ion-input>
+    </ion-item>
+      <ion-item>
+        <ion-label position="floating">Confirm Password</ion-label>
+        <ion-input type="password"></ion-input>
+    </ion-item>
+      <ion-item>
+        <ion-label position="floating">Phone Number</ion-label>
+        <ion-input type="tel"></ion-input>
+    </ion-item>
+      <!-- <ion-input
+      type="email"
+      fill="solid"
+      label="Email"
+      labelPlacement="floating"
+      helperText="Enter a valid email"
+      errorText="Invalid email"
+      ngModel 
+      email
+    ></ion-input> -->
+    <!-- <ion-input label="Email" labelPlacement="floating" type="email" ></ion-input>
+    <ion-input label="Password" labelPlacement="floating" type="Password"></ion-input>
+    <ion-input label="Confirm Password" labelPlacement="floating" type="Password"></ion-input> -->
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+   <ion-card-title>Address Details</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item>
+        <ion-label position="floating">Address</ion-label>
+        <ion-input type="text"></ion-input>
+    </ion-item>
+      <ion-item>
+        <ion-label position="floating">District</ion-label>
+        <ion-input type="text"></ion-input>
+    </ion-item>
+      <ion-item>
+        <ion-label position="floating">City</ion-label>
+        <ion-input type="text"></ion-input>
+    </ion-item>
+      <ion-item>
+        <ion-label position="floating">Zip Code</ion-label>
+        <ion-input type="number"></ion-input>
+    </ion-item>
+    </ion-card-content>
+  </ion-card>
+  <ion-list style="text-align:center">
+  <ion-button >Register</ion-button>
+</ion-list>
+</ion-content>

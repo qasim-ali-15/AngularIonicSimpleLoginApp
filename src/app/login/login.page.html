@@ -1,29 +1,29 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>login</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
+
   <div class="main">
-    <div>
-      <img alt="Login" src="../../assets/login.png" />
-    </div>
-    <div class="cardHeader">
-      <ion-card-header>
-        <ion-card-title>Login Page</ion-card-title>
-        <ion-card-subtitle>Enter the details below:</ion-card-subtitle>
-      </ion-card-header>
-    </div>
-    <ion-card-content>
-      <ion-input label="Enter User Name:" label-placement="floating" fill="solid" placeholder="User Name"></ion-input>
+    <ion-card>
+      <ion-card-content>
+        <div class="header">
+          <img alt="Login" src="../../assets/login.png" />
+        </div>
+        <div class="body">
+          <ion-card-title>
+            <p>Login Page</p>
+          </ion-card-title> <br>
+          <!-- <ion-card-subtitle>Enter the details below:</ion-card-subtitle> <br> -->
+          <ion-input label="Enter User Name:" label-placement="floating" fill="outline"
+            placeholder="User Name"></ion-input>
 
-      <br>
+          <br>
 
-      <ion-input label="Enter Password:" label-placement="floating" fill="solid" placeholder="Password"
-        type="Password"></ion-input>
-      <br>
-      <ion-button (click)="logIn()">Login</ion-button>
-    </ion-card-content>
+          <ion-input label="Enter Password:" label-placement="floating" fill="outline" placeholder="Password"
+            type="Password"></ion-input>
+          <br>
+          <ion-button (click)="logIn()" size="full">Login</ion-button>
+          <ion-button size="full" color="light">Register</ion-button>
+        </div>
+      </ion-card-content>
+    </ion-card>
   </div>
+
 </ion-content>
