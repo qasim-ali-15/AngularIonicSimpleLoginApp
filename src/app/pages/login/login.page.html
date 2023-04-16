@@ -1,6 +1,7 @@
-<ion-content [fullscreen]="true">
+<ion-content>
 
   <div class="main">
+    <form [formGroup]="form">
     <ion-card>
       <ion-card-content>
         <div class="header">
@@ -11,19 +12,21 @@
             <p>Login Page</p>
           </ion-card-title> <br>
           <!-- <ion-card-subtitle>Enter the details below:</ion-card-subtitle> <br> -->
-          <ion-input label="Enter User Name:" label-placement="floating" fill="outline"
-            placeholder="User Name"></ion-input>
+          <ion-input label="Enter Email:" label-placement="floating" fill="outline"
+            placeholder="Email" type="email" formControlName="email"></ion-input>
 
           <br>
 
           <ion-input label="Enter Password:" label-placement="floating" fill="outline" placeholder="Password"
-            type="Password"></ion-input>
+            type="Password" formControlName="password"></ion-input>
           <br>
-          <ion-button (click)="logIn()" size="full">Login</ion-button>
+          <ion-button color="dark" size="full" fill="clear">Forget email/password</ion-button>
+          <ion-button (click)="logIn()" size="full" [disabled]="!form.valid">Login</ion-button>
           <ion-button (click)="register()" size="full" color="light">Register</ion-button>
         </div>
       </ion-card-content>
     </ion-card>
+  </form>
   </div>
 
 </ion-content>

@@ -13,14 +13,14 @@ import { Router } from '@angular/router';
 })
 export class LoaderPage implements OnInit {
 
-  constructor(public router:Router) { }
+  constructor(private router:Router) { }
 
   ngOnInit() {
 
    this.router.navigateByUrl('/login')
     // setInterval(()=>{
-    //   this.router.navigateByUrl('/login');
-    // },500)
+    //   this.router.navigateByUrl('login');
+    // },1000)
   }
   
 

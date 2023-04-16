@@ -14,7 +14,7 @@ import { Router } from '@angular/router';
 })
 export class SchedulePage implements OnInit {
 
-  constructor(public router:Router) { }
+  constructor(private router:Router) { }
 
   ngOnInit() {
   }
