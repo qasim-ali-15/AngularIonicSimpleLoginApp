@@ -22,7 +22,11 @@ export class LoginPage implements OnInit {
   }
 
   logIn(){
-    this.router.navigate(['/tabs/tab1']);
+    this.router.navigate(['home']);
+  }
+
+  register(){
+    this.router.navigate(['register']);
   }
 
 }

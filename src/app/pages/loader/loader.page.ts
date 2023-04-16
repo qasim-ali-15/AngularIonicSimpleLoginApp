@@ -4,22 +4,25 @@ import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
 import { Router } from '@angular/router';
 
-
 @Component({
-  selector: 'app-location',
-  templateUrl: './location.page.html',
-  styleUrls: ['./location.page.scss'],
+  selector: 'app-loader',
+  templateUrl: './loader.page.html',
+  styleUrls: ['./loader.page.scss'],
   standalone: true,
   imports: [IonicModule, CommonModule, FormsModule]
 })
-export class LocationPage implements OnInit {
+export class LoaderPage implements OnInit {
 
   constructor(public router:Router) { }
 
   ngOnInit() {
-  }
 
-  logOut(){
-    this.router.navigate(['login']);
+   this.router.navigateByUrl('/login')
+    // setInterval(()=>{
+    //   this.router.navigateByUrl('/login');
+    // },500)
   }
+  
+
+
 }

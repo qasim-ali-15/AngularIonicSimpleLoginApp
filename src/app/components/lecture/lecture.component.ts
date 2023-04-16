@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { Router } from '@angular/router';
 import { IonicModule } from '@ionic/angular';
 
 @Component({
@@ -12,15 +13,20 @@ import { IonicModule } from '@ionic/angular';
 })
 export class LectureComponent implements OnInit {
 
-  @Input() hasHeader: boolean = false;
+  //@Input() hasHeader: boolean = false;
   @Input() hasFooter: boolean = false;
 
   @Input() subject: string = "Programming Fundamentals";
   @Input() date: string = "4/13/2023";
   @Input() time: string = "08:32 AM";
   @Input() detail: string = "BS Computer Science Fall 2019";
-  constructor() { }
+  @Input() lecture: string = "First Lecture";
+  constructor(private router: Router) { }
 
   ngOnInit() { }
+
+  seeAll(){
+    this.router.navigate(['schedule']);
+  }
 
 }

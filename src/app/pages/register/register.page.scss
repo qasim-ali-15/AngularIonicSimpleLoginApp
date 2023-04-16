@@ -8,6 +8,10 @@ ion-header ion-toolbar{
 ion-content ion-button{
     --background: linear-gradient(135deg, #FAB2FF 10%, #1904E5 100%);
   }
-  ion-content ion-card{
+  ion-content{
     --background: linear-gradient(135deg, #FAB2FF 10%, #1904E5 100%);
+  }
+
+  ion-card ion-card-title{
+    font-weight: 700;
   }

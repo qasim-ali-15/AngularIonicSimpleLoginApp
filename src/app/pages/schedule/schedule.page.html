@@ -1,18 +1,21 @@
 <ion-header>
   <ion-toolbar>
     <ion-buttons slot="start">
-      <ion-back-button text="Previous" icon="caret-back"></ion-back-button>
+      <ion-back-button text="" icon="caret-back"></ion-back-button>
     </ion-buttons>
+    <ion-button (click)="logOut()" slot="end" color="light" >
+      <ion-icon name="log-out-outline"></ion-icon>
+    </ion-button>
     <ion-title>Schedule</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <app-lecture subject="Programming Fundamentals" 
+  <app-lecture lecture="First Lecture" subject="Programming Fundamentals" 
   date="4/13/2023" time="08:30 AM" detail="BS Computer Science Fall 2019"></app-lecture>
-  <app-lecture subject="Data Base" 
+  <app-lecture lecture="Second Lecture" subject="Data Base" 
   date="4/13/2023" time="11:30 AM" detail="BS Software Engineering Fall 2019"></app-lecture>
-  <app-lecture subject="Data Structures and Algorithm" 
+  <app-lecture lecture="Third Lecture" subject="Data Structures and Algorithm" 
   date="4/13/2023" time="03:30 AM" detail="BS Information Technology Fall 2019"></app-lecture>
   <!-- <ion-card>
   <ion-card-header>
