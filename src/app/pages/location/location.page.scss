@@ -2,8 +2,24 @@ ion-header ion-toolbar {
     --background: linear-gradient(135deg, #FAB2FF 10%, #1904E5 100%);
 }
 
+ion-toolbar{
+    ion-button{
+      --background: linear-gradient(180deg, #FAB2FF 10%, #1904E5 100%);
+    }
+  }
+  
 ion-content {
     ion-button {
         --background: linear-gradient(225deg, #FAB2FF 10%, #1904E5 100%);
     }
+}
+
+.header img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+  width: 50%;
+  margin: auto;
+  margin-top: 0.5in;
 }

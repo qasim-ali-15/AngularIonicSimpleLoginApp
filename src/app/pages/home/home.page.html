@@ -1,13 +1,46 @@
 <ion-header >
   <ion-toolbar>
-    <ion-buttons slot="start">
-      <ion-menu-button auto-hide="false"></ion-menu-button>
-    </ion-buttons>
-    <ion-button (click)="logOut()" slot="end" color="light" >
-      <ion-icon name="log-out-outline"></ion-icon>
-    </ion-button>
-    <ion-title>Home</ion-title>
-  </ion-toolbar>
+   
+    <ion-menu contentId="main-content" slot="secondary">
+    
+      <ion-content class="ion-padding">This is the menu content.</ion-content>
+    </ion-menu>
+    <div class="ion-page" id="main-content">
+     
+        <ion-toolbar>
+          <ion-buttons >
+            <ion-menu-button></ion-menu-button>
+          </ion-buttons>
+          <ion-title></ion-title>
+        </ion-toolbar>
+     
+      <ion-content class="ion-padding">
+        Tap the button in the toolbar to open the menu.
+      </ion-content>
+    </div>
+    
+    <ion-title><div class="center justify-center flex text-2xl ">Home</div></ion-title>
+ 
+      <ion-label slot="end">
+      <ion-button id="popover-button"><ion-icon name="settings-outline"></ion-icon></ion-button>
+<ion-popover trigger="popover-button" [dismissOnSelect]="true">
+  <ng-template>
+    <ion-content >
+      <ion-list>
+        <ion-item [button]="true" [detail]="false" (click)="password()">Change Password</ion-item>
+        <ion-item [button]="true" [detail]="false" (click)="logOut()">Log Out
+          <ion-icon name="log-out-outline" slot="end"></ion-icon>
+        </ion-item>
+ 
+      </ion-list>
+    </ion-content>
+  </ng-template>
+</ion-popover>
+</ion-label>
+    
+    
+
+</ion-toolbar>
 </ion-header>
 
 <ion-content >

@@ -3,18 +3,20 @@
     <ion-buttons slot="start">
       <ion-back-button text="" icon="caret-back"></ion-back-button>
     </ion-buttons>
-    <ion-button (click)="logOut()" slot="end" color="light" >
+    <ion-button (click)="logOut()" slot="end" >
       <ion-icon name="log-out-outline"></ion-icon>
     </ion-button>
-    <ion-title> <div class="center justify-center flex text-4xl text-white font-bold">Location</div></ion-title>
+    <ion-title> <div class="center justify-center flex text-2xl ">Location</div></ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+  <div class="flex-col justify-center items-center">
 
-  <div class="w-full">
+  <div class="header">
     <img src="../../../assets/maps.jpg">
   </div>
+  <div class="flex justify-center items-center">
 <ion-card>
   <ion-card-content>
     <p>Location: Cantt</p>
@@ -24,6 +26,7 @@
     <p>Postal Code: 9021</p>
   </ion-card-content>
 </ion-card>
+</div>
 <ion-list>
   <ion-item lines="insert">
     <ion-label position="floating">Notes</ion-label>
@@ -31,4 +34,5 @@
   </ion-item>
 </ion-list>
 <ion-button size="full">Add Another Location</ion-button>
+</div>
 </ion-content>

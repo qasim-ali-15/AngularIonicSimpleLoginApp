@@ -28,4 +28,7 @@ export class HomePage implements OnInit {
   goToLocation(){
     this.router.navigate(['location']);
   }
+  password(){
+    this.router.navigate(['reset-password']);
+  }
 }
