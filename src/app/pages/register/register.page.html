@@ -16,12 +16,20 @@
     </ion-card-header>
     <ion-card-content>
       <ion-radio-group value="space-between">
-        <ion-item>
-          <ion-radio value="TEACHER" justify="space-between">Teacher</ion-radio>
+        <div class="flex justify-center ">
+        <ion-item lines="none">
+          <div class="flex-col max-w-xs justify-center shadow-2xl items-center ">
+          <img src="../../../assets/teacher.png" alt="Teacher">
+          <ion-radio value="TEACHER" justify="space-between" slot="justify-center" >Teacher</ion-radio>
+        </div>
         </ion-item>
-        <ion-item>
+        <ion-item lines="none">
+          <div class="flex-col max-w-xs justify-center shadow-2xl"> 
+          <img src="../../../assets/idea.png" alt="Student">
           <ion-radio value="STUDENT" justify="space-between">Student</ion-radio>
+        </div>
         </ion-item>
+      </div>
       </ion-radio-group>
 
     </ion-card-content>
