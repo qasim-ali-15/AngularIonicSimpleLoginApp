@@ -31,4 +31,7 @@ export class HomePage implements OnInit {
   password(){
     this.router.navigate(['reset-password']);
   }
+  news(){
+    this.router.navigate(['news-feed']);
+  }
 }

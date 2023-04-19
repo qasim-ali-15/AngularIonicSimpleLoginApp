@@ -27,10 +27,12 @@
   <ng-template>
     <ion-content >
       <ion-list>
+        <ion-item [button]="true" [detail]="false" (click)="news()">New Feed</ion-item>
         <ion-item [button]="true" [detail]="false" (click)="password()">Change Password</ion-item>
         <ion-item [button]="true" [detail]="false" (click)="logOut()">Log Out
           <ion-icon name="log-out-outline" slot="end"></ion-icon>
         </ion-item>
+       
  
       </ion-list>
     </ion-content>
