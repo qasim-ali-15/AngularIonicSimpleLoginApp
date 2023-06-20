@@ -37,4 +37,8 @@ export const routes: Routes = [
     path: 'news-feed',
     loadComponent: () => import('./pages/news-feed/news-feed.page').then( m => m.NewsFeedPage)
   },
+  {
+    path: 'profile',
+    loadComponent: () => import('./pages/profile/profile.page').then( m => m.ProfilePage)
+  },
 ];

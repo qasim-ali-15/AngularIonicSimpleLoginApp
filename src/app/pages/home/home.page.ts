@@ -34,4 +34,8 @@ export class HomePage implements OnInit {
   news(){
     this.router.navigate(['news-feed']);
   }
+  profile()
+  {
+    this.router.navigate(['profile']);
+  }
 }

@@ -1,0 +1,47 @@
+<ion-header >
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button text="" icon="caret-back"></ion-back-button>
+    </ion-buttons>
+    <ion-button (click)="logOut()" slot="end">
+      <ion-icon name="log-out-outline"></ion-icon>
+    </ion-button>
+    <ion-title>
+      <div class="center justify-center flex text-2xl ">Profile</div>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content >
+  <div class="flex flex-col space-y-5 ">
+  <ion-card>
+    <!-- <ion-card-header>
+     <div class="flex font-bold text-xl justify-center items-center center"> Student Profile </div>
+    </ion-card-header> -->
+    <div class="flex flex-col space-y-5">
+    <ion-card-content>
+      <div class="flex justify-center items-center center pt-2">
+      <ion-avatar >
+       
+        <img src="../../../assets/man.png"/>
+      </ion-avatar></div>
+      <div class="flex font-bold text-2xl justify-center items-center center pt-2 pb-8">
+  Muhammad Huzaifa
+</div>
+<div class="flex-row  ">
+  <div class="flex text-lg pt-2 ">
+    <b> Email: </b> mhuzaifa@gmail.com
+  </div>
+  <div class="flex text-lg pt-2 ">
+    <b> Status: </b> Active
+  </div>
+  <div class="flex justify-center items-center center pt-8 text-violet-600">
+  <ion-button>See Details</ion-button>
+</div>
+</div>
+   
+    </ion-card-content>
+    </div>
+  </ion-card>
+</div>
+</ion-content>
